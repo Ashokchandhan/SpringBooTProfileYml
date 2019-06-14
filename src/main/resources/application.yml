@@ -1,0 +1,22 @@
+my:
+  message: FROM DEFAULT MESSAGE
+    code: FROM DEFAULT code
+    mode: FROM DEFAULT mode
+Spring:
+  profiles:
+   active:dev
+ ---
+ Spring:
+   profile: dav
+ my:
+   code: FROM QA CODE
+   mode: FROM QA MODE
+ ---
+ Spring:
+    profile:dev
+  my:
+  message: FROM DE MESSAGE
+  mode: FROM DEV MODE        
+   
+   
+    
